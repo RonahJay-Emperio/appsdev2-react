@@ -6,7 +6,7 @@ export default function DataTable({ data }) {
 
   return (
     <>
-      <h1>Movie.List    </h1>
+      <h1 className="MyMovieList">MyMovieList</h1>
       <table className="data-table">
         <thead>
           <tr>

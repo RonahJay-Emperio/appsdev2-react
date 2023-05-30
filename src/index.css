@@ -1,69 +1,154 @@
+/* Add a background image to the page */
+body {
+  background-image: url('https://example.com/background.jpg');
+  background-size: cover;
+}
+
+/* Style the movie details container */
 .movie-details {
-    padding: 20px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .movie-details h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .movie-details ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .movie-details li {
-    margin-bottom: 5px;
-  }
-  
-  .movie-details button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  .data-table th,
-  .data-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  .data-table th {
-    background-color: #f5f5f5;
-    font-weight: bold;
-  }
-  
-  .data-table td {
-    text-align: center;
-  }
-  
-  .data-table button {
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  body {
-    font-family: Arial, sans-serif; /* Set your desired font family */
-  }
-  
-  .app-title {
-    font-size: 24px;
-    font-weight: bold;
-  }
-      
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Style the movie title */
+.movie-details h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Style the movie details list */
+.movie-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* Style the movie details list items */
+.movie-details li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Style the back button */
+.movie-details button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Change the background color of the button on hover */
+.movie-details button:hover {
+  background-color: #555;
+}
+/* Add a background color to the table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+/* Style the table headers */
+.data-table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the table cells */
+.data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Style the delete button */
+.data-table button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Change the background color of the delete button on hover */
+.data-table button:hover {
+  background-color: #555;
+}
+
+/* Add some life to the table */
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-table tr:hover {
+  background-color: #ddd;
+  transition: background-color 0.2s ease-in-out;
+}
+/* Style the delete button */
+.data-table button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Change the background color of the delete button on hover */
+.data-table button:hover {
+  background-color: #555;
+}
+
+/* Style the app title */
+.app-title h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px #ddd;
+}
+
+/* Add a gradient background to the app title */
+.app-title h1 {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.MyMovieList {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px #ddd;
+}
+
+/* Add a gradient background to the app title */
+.MyMovieList {
+  background: linear-gradient(to right, #333, #555);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
